@@ -148,7 +148,7 @@ One master goes to Reels, TikTok and Shorts, so there is **one script with one C
 - Each item is a tool the viewer could use on its own. One method in order is *problema → sistema*, never a set.
 - With a `confronto` hook, the last item ends on the verdict.
 - The agent shortcut may follow the CTA, as in the default skeleton.
-- Tag the lines `hook`, `set`, `item N`, `CTA`.
+- Beat names for *Struttura*: `hook`, `set`, `item N`, `CTA`.
 
 ## The tutorial skeleton: problema → sistema
 
@@ -166,7 +166,7 @@ One master goes to Reels, TikTok and Shorts, so there is **one script with one C
 
 - The last step is the payoff: it escalates the hook's promise ("non avrà più limiti").
 - Three steps unless the content really has more. The steps are one method in order, not a set.
-- Tag the lines `hook`, `premessa`, `problema`, `sistema`, `step N`, `CTA`, `scorciatoia agente`.
+- Beat names for *Struttura*: `hook`, `premessa`, `problema`, `sistema`, `step N`, `CTA`, `scorciatoia agente`.
 
 ## Filling the body, by content type
 
@@ -210,7 +210,7 @@ Every script goes through the `umanizzatore` skill before delivery. Draft the wh
 5. **Scan the spoken lines.**
 
    ```bash
-   sed -n '/^\[[0-9]/p' <video folder>/edit/script.md | python3 ~/.claude/skills/umanizzatore/scripts/scan_it.py -
+   sed -n '/^## Testo/,/^## /{/^## /d;p}' <video folder>/edit/script.md | python3 ~/.claude/skills/umanizzatore/scripts/scan_it.py -
    ```
 
    A clean scan means only that the mechanical tells are absent. The scanner prints each hit's strength: a "debole da solo" hit justifies an edit only alongside other tells in the same passage.
@@ -227,26 +227,28 @@ Every script goes through the `umanizzatore` skill before delivery. Draft the wh
 
 ## Deliverable
 
-Write to `~/Projects/video-making/<video folder>/edit/script.md`. Tag every spoken line with its beat, using the tags of its skeleton. The default skeleton:
+Write to `~/Projects/video-making/<video folder>/edit/script.md`. The spoken text goes under *Testo* as plain paragraphs, one per beat, with no timestamps, beat labels or other markup, so the user can copy the whole block straight into a teleprompter or Notion (the user, 2026-10-26). The beat map lives under *Struttura*. In chat, show the script the same way: the plain text first, in one block, then the rest.
 
 ```markdown
 # <title> · <single|set-N> · <default|set|problema → sistema> · ~<NN>s
 
-[00:00 · hook] <…>
+## Testo
 
-[00:03 · super hook] <…>
+<hook>
 
-[00:07 · open loop] <…>
+<super hook>
 
-[00:10 · body 1] <…>
+<open loop>
 
-[00:18 · rehook] <…>
+<body 1>
+
+<rehook>
 
 …
 
-[00:34 · payoff] <…>
+<payoff>
 
-[00:38 · CTA] <…>
+<CTA>
 
 ## Hook candidati
 - `<hook_type>` (scelto): <the hook used>
@@ -255,9 +257,10 @@ Write to `~/Projects/video-making/<video folder>/edit/script.md`. Tag every spok
 - …
 
 ## Struttura
+- Beat: hook "<first words>" · super hook "<first words>" · open loop "<first words>" · … · CTA "<first words>"
 - Hook: <hook_type>, scelto fra <N> candidati perché <the reason>
 - Super hook: <the source of authority>
-- Open loop: "<the promise>", pagato a [00:34]
+- Open loop: "<the promise>", pagato nel payoff
 - Rehook: <the forms used>
 - Interventi strutturali: <one or two from the menu, and why>
 - Rispetto a voice.md: <what changed>

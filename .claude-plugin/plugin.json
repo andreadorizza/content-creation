@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "content-creation",
   "description": "Andrea Dorizza's skills for short-form content. short-form-script writes the Italian script for a Reel, TikTok or Short: eight hook candidates to pick from, three skeletons, then the humanizer pass.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Andrea Dorizza",
     "url": "https://dorizza.com"

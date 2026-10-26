@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "content-creation",
+  "owner": {
+    "name": "Andrea Dorizza",
+    "url": "https://dorizza.com"
+  },
+  "description": "Install content-creation as a Claude plugin.",
+  "plugins": [
+    {
+      "name": "content-creation",
+      "source": "./",
+      "description": "Andrea Dorizza's skills for short-form content. short-form-script writes the Italian script for a Reel, TikTok or Short: eight hook candidates to pick from, three skeletons, then the humanizer pass.",
+      "keywords": ["short-form", "script", "reels", "tiktok", "shorts", "hook", "copione"]
+    }
+  ]
+}

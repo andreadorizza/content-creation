@@ -125,7 +125,7 @@ Pay the open loop explicitly, close enough to its wording that the viewer recogn
 
 - **End hot.** No summary, no moral, no "questo è il punto" after the payoff. A wrap-up coda is structural audit 1, and it is the Claude fingerprint the structural pass warns about.
 - The CTA can ride on the payoff ("il link al terzo te lo mando: commenta TERZO").
-- **The CTA may offer a guide**: "Se commenti LUMINARE ti mando la guida e la repo." The guide must exist before the video is published; list it under *Note* as a task (the `website-resource` skill makes it).
+- **The CTA may offer a guide**: "Se commenti LUMINARE ti mando la guida e la repo." The guide must exist before the video is published; list it under *Note* as a task (the `website-resource` skill makes it). The guide's title is built around the phrase Italians search for the topic, so the voice names the topic once with that same phrase, and *Note* gives it next to the task: the `cerca:` phrase in the topic's `INDEX.csv` notes, or, without one, checked with `claude-seo:seo-dataforseo`.
 - **One line may follow the CTA: the agent shortcut.** "E se preferisci che questo sistema lo costruisca il tuo agente al posto tuo, salva questo video e mandalo dritto a lui insieme alla guida." It asks for a save and a send, the strongest signals, after the comment. It works only when the agent can read what it is sent: the guide (and the post caption) must hold the repo and every step written out, because the agent cannot watch the reel before it has the tool. The user moved it there from the reference's 0:11 on 2026-10-01.
 
 ### One CTA for every platform
@@ -221,7 +221,7 @@ Every script goes through the `umanizzatore` skill before delivery. Draft the wh
 - **Italian runs 10–15% longer than English** at equal content. Cut empty connectives ("in pratica", "e quindi") before you cut substance.
 - **Written for the ear.** Connectives that announce the next beat stay: "Funziona così:", "Infine", "Quindi" guide someone who is listening, not reading. Full sentences with their subjects ("tu scarichi l'app…, lui si sceglie il modello…"), not telegraphic fragments cut to hit a word count.
 - **"Il tuo agente", by default.** The audience uses Claude Code, Codex and others. Say "il tuo agente AI" and name a product only where a step differs between them: "Claude Code lo fa con skill-creator, la skill ufficiale di Anthropic, mentre Codex ce l'ha già di serie" (the user, 2026-10-01).
-- **Keep the technical terms in English**: plugin, token, hook, skill, prompt, MCP, codebase, tool, router. Translating them reads academic to this audience. *Agent* is the exception: the user writes "agenti".
+- **Keep the technical terms in English**: plugin, token, hook, skill, prompt, MCP, codebase, tool, router. Translating them reads academic to this audience, and the English words are what Italians search. *Agent* is the exception: the user writes "agenti".
 - **Numbers in Italian convention**: decimal comma, `1,6 miliardi`, `€` after the figure.
 - Read it aloud against a timer and write the estimated duration in *Note*. Time it at his measured pace, ~180 words/minute after the cut, not a generic 230: open-feed-sorter (2026-10-06) cut to 174 spoken words in 57 s, where its draft had promised ~41 s, and freellmapi's 188-word script ran 69 s. So 30s is ~90 words, 1 min ~180, 2 min ~360. The length follows the content: never squeeze lines into fragments to hit a number. Cut only what carries no value.
 
@@ -269,7 +269,7 @@ Write to `~/Projects/video-making/<video folder>/edit/script.md`. The spoken tex
 - <every number and attribution in the script, with its source or "fornito dall'utente">
 
 ## Note
-- <word count, estimated duration, anything cut for length, the guide to make>
+- <word count, estimated duration, anything cut for length, the guide to make and its search phrase>
 ```
 
 ## Then update the index
